@@ -38,6 +38,7 @@ header{
 .logo{
     font-size: 24px;
     color: #0a1280;
+    text-decoration: none;
 }
 
 .logo span{
@@ -47,12 +48,16 @@ header{
 .navbar{
     display: flex;
     align-items: center;
+;
 }
 
 .navbar .navbar__pages{
     font-size: 20px;
     margin-left: 25px;
     color: #0010f5;
+    text-decoration: none;
+    transition: 0.5s;
+    transform: scale(1.0);
 }
 
 .navbar a:hover{
@@ -107,20 +112,22 @@ header{
     position:absolute;
     text-align: center;
     background-color: #000000a8;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .footer__info--link{
     font-size: 18px;
     color: #ffffff;
-    margin: 0px 250px 0px 250px;
+    text-decoration: none;
 }
 
 .footer__info--img{
     height: 25px;
     width: 25px;
     align-items: center;
-    margin: 30px 30px -3px 15px 
+    margin: 0px 0px 5px 10px
 }
 
 /*Termina Index*/
@@ -489,6 +496,7 @@ header{
         font-size: 18px;
         color: #ffffff;
         margin: 0px 250px 0px 250px;
+    
     }
     
     .footer__info--img{
