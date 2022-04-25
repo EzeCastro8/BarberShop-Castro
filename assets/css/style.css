@@ -13,7 +13,7 @@
 
 
 
-body{
+.cuerpoindex{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 95px 300px 1500px 90px; 
@@ -22,10 +22,12 @@ body{
     "titulo"
     "imagenuno"
     "pie";
+    background-color: #0c08ff11;
 }
 
 header{
     position: fixed;
+    top: 0;
     grid-area: nav;
     width: 100%;
     background-color: white;
@@ -48,7 +50,6 @@ header{
 .navbar{
     display: flex;
     align-items: center;
-;
 }
 
 .navbar .navbar__pages{
@@ -68,6 +69,10 @@ header{
 .tituloindex{
     grid-area: titulo;
     
+}
+
+.inicio{
+    background-color: #0c08ff11;
 }
 
 .inicio__titulo{
@@ -147,6 +152,7 @@ header{
 
 .tarjetas{
     display: flex;
+    justify-content: center
 }
 
 .subtituloTarjetas{
@@ -168,15 +174,9 @@ header{
     margin:40px 40px 40px 40px;
 }
 
-.tarjetas__productos a:hover{
-    font-size: 31px;
-    color: white;
-    background-color:#030163 ;
-    border:solid 2px #000000;
-}
+
 
 .tarjetas__productos--articulos{
-    width: 90%;
     font-size: 25px;
     margin: 20px 20px 20px 20px;
     padding: 10px 10px 10px 10px;
@@ -184,13 +184,12 @@ header{
 }
 
 .tarjetas__productos--img{
-    height: 297px;
-    width: 297px;
-    margin: 10px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    height: 290px;
+    width: 290px;
 }
 
 .tarjetas__productos--descripcion{
+    height: 95px;
     font-size: 18px;
     padding: 0px 20px 0px 20px;
 }
@@ -202,7 +201,16 @@ header{
     padding: 5px 5px 5px 5px;
     border: solid 1px;
     border-radius: 5px;
-    margin: 0px 10px 0px 350px;
+    margin: 380px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.boton:hover{
+    font-size: 31px;
+    color: white;
+    background-color:#030163 ;
+    border:solid 2px #000000;
 }
 
 
@@ -212,7 +220,7 @@ header{
 /*Comienza Tutoriales*/
 
 .tituloTutoriales{
-    margin: 50px 0px 0px 20px;
+    margin: 20px 10px 0px 0px;
     font-size: 30px;
     color:#061099;
     text-align: center;
@@ -220,17 +228,23 @@ header{
 
 .tutorial{
     display: flex;
+    justify-content: center
 }
 
 .tutorial__texto{
     height: 400px;
-    width: 30%;
+    width: 600px;
     font-size: 20px;
     color: #ffffff;
-    margin: 30px 0px 0px 50px;
+    margin: 30px 0px 0px 30px;
     padding: 35px 35px 35px 35px;
     background-color:#8381fa;
-    border-radius: 8px;
+    transition: all 1.5s;
+}
+
+.tutorial__texto:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
 }
 
 .titulo__lista{
@@ -242,8 +256,15 @@ header{
 .video{
     height: 400px;
     width: 600px;
-    margin: 30px 0px 150px 350px;
-    border-radius: 8px;
+    margin: 30px 30px 30px 0px;
+    transition: all 1.5s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3); ;
+    background-color: #000000;
+}
+
+.video:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
 }
 
 /*Termina Tutoriales*/
@@ -266,7 +287,7 @@ header{
                          "subtitulod subtitulod  subtitulod"
                          "imgd       pd          mapad"
                          "footer     footer      footer";
-     background-color: #0c08ff11;
+    background-color: #0c08ff11;
 }
 
 .headerlocal{
@@ -505,6 +526,10 @@ header{
         align-items: center;
         margin: 30px 30px -3px 15px 
     }
+
+    .tituloPaginas{
+        margin-top:235px;
+    }
     
     .cuerpo{
         width: 100%;
@@ -528,7 +553,7 @@ header{
                              "footer     footer      footer";
     }
     .navbar .navbar__pages{
-        font-size: 40px;
+        font-size: 35px;
         margin: 15px 5px 0px 5px;
         padding: 5px;
         color: white;
@@ -664,8 +689,41 @@ header{
 
 
 /*Termina Locales*/
+.subtitulo{
+    font-size: 40px;
+    color:#030235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
 
+.contenedortexto{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.contactostexto{
+    font-size: 25px;
+    color: #ffffff;
+    padding: 35px 35px 35px 35px;
+    background-color:#8381fa;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.contenedorformulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario{
+    margin: 50px 0px 50px 0px;
+}
 /*Comienza Contactos*/
 
 /*Termina Contactos*/

@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=>, initial-scale=1.0">
         <title>Arg BarberShop</title>
         <link rel="shotchut icon" href="../assets/img/navaja.ico">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../assets/css/style.css">
     </head>
-    <body>
-    
-        <header>
-            <a href="#" class="logo">
+    <body class="conteiner-fluid inicio">
+
+        <header class="col-md-12">
+            <a href="../index.html" class="logo" >
                 <span>ARG</span>BarberShop
             </a>
             <nav class="navbar">
@@ -20,41 +21,45 @@
                 <a href="../pages/tienda.html" class="navbar__pages">Tienda</a>
                 <a href="../pages/tutoriales.html" class="navbar__pages">Tutoriales</a>
                 <a href="../pages/locales.html" class="navbar__pages">Locales</a>
-                <a href="../pages/contactos.html" class="navbar__pages">Contactos</a>
+                <a href="../pages/contactos.html"class="navbar__pages" >Contactos</a>
             </nav>
         </header>
 
-    <h1 class="tituloPaginas">¿Quienes Somos?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis vero ducimus velit iste cumque recusandae sit, laborum nulla repellat sunt? Excepturi velit ipsam nulla autem magni dolorum ex possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, doloribus alias! Ea neque reiciendis dolorum officia placeat sunt laboriosam maiores molestiae, sequi sed? Dolor temporibus animi necessitatibus eligendi minus quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi non architecto, ipsam animi accusantium eius consectetur dolor, fuga porro, laborum reprehenderit! Consequatur quia ullam neque sunt corrupti necessitatibus quas mollitia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequuntur vel voluptas, ut unde quidem eaque dolorem veniam iusto! Fugiat voluptatem temporibus nesciunt qui vitae, modi ipsam cupiditate impedit reiciendis.</p>
-         
-    <!--Inicia Formulario-->
+        <div class="row"></div>
+        
+            <h1 class="col-md-12 inicio__titulo">¿Quienes Somos?</h1>
+            <div class="contenedortexto">
+                <p class="col-md-11 contactostexto">Nosotros somos la barberia mas grande y famosa de Argentina ubicada en Buenos Aires, Moron. Trabajamos desde 2009 con solo un grupo de 3 integrantes, hoy ya somos mas de 100 personas trabajando en este proyecto y tenemos varios locales por distintas zonas, estamos dentro del Top 50 Barberias del Mundo. No solo trabajamos en la imagen de las personas, si no tambien damos cursos virtuales y presenciales para que se puedan convertir en barberos profesionales y vendemos todas las herramientas para que un barbero o barbera pueden trabajar comodamente. </p>
+            </div>
+            <div class="row">
+                <h2 class="col-md-12 subtitulo">Contáctanos</h2>
+                <div class="contenedorformulario">
+                    <form class="col-md-5 formulario">
+                        <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                        </div>
+                        <button button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>  
+                </div>
+            </div>
 
-        <h2>Contáctanos</h2>
-            <form>
-                <input name="nombre" placeholder="Ingrese su nombre">
-                <input name="apellido" placeholder="Ingrese su Apellido">
-                <input name="direccion" placeholder="Ingrese su direccion">
-                <input name="email" type="email" placeholder="Ingrese su email">
-                <input name="contraseña" type="password" placeholder="Ingrese su contraseña">
-                <input type="reset" value="Reestablecer">
-                <input type="submit" value="Enviar">
-            </form>  
+            <footer class="col-md-12">
+                <div class="footer__info">
+                    <a href="../pages/contactos.html" class="footer__info--link">Contáctanos<img src="../assets/img/email.png" class="footer__info--img"></a>
+                    <a href="../pages/locales.html" class="footer__info--link">Locales<img src="../assets/img/shop-solid.svg" class="footer__info--img"></a>
+                    <a href="https://www.instagram.com/castroeze.11/" class="footer__info--link">Redes<img src="../assets/img/instagram-brands.svg" class="footer__info--img"></a>
+                </div>
+            </footer>
 
-    <!--Finaliza Formulario-->
-    
-    <footer class="footer">
-        <div class="footer__info">
-            <a href="../pages/contactos.html" class="footer__info--link">
-                Contáctanos<img src="../assets/img/email.png" class="footer__info--img">
-            </a>
-            <a href="../pages/locales.html" class="footer__info--link">
-                Locales<img src="../assets/img/shop-solid.svg" class="footer__info--img">
-            </a>
-            <a href="https://www.instagram.com/castroeze.11/" class="footer__info--link">
-                Redes<img src="../assets/img/instagram-brands.svg" class="footer__info--img">
-            </a>
         </div>
-    </footer>
 
+    <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
