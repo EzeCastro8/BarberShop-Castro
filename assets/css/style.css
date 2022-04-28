@@ -692,17 +692,11 @@ header{
 .subtitulo{
     font-size: 40px;
     color:#030235;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 60px;
 }
 
 .contenedortexto{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 20px;
 }
 
 .contactostexto{
@@ -712,13 +706,6 @@ header{
     background-color:#8381fa;
     border-radius: 8px;
     margin-top: 50px;
-}
-
-.contenedorformulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .formulario{
