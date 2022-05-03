@@ -1,0 +1,33 @@
+.footer{
+    grid-area: pie;   
+}
+
+.footer__info{
+    width: 100%;
+    height: 90px;
+    position:absolute;
+    text-align: center;
+    background-color: #000000a8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .footer__info--link{
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footer__info--link:hover{
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+        color:#8381fa;
+    }
+    .footer__info--img{
+        height: 25px;
+        width: 25px;
+        align-items: center;
+        margin: 0px 0px 5px 10px
+    }
+}
+
+.footerlocal{
+    grid-area: footer;
+}

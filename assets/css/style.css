@@ -1,736 +1,660 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
-
-*{
-    font-family: 'Dosis', sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap");
+* {
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
 }
 
-/*Comienza Index*/
-
-
-
-.cuerpoindex{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 95px 300px 1500px 90px; 
-    grid-template-areas: 
-    "nav"
-    "titulo"
-    "imagenuno"
-    "pie";
-    background-color: #0c08ff11;
+.inicio {
+  background-color: #0c08ff11;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    grid-area: nav;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
-    padding: 32px 9%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-}
-.logo{
-    font-size: 24px;
-    color: #0a1280;
-    text-decoration: none;
+header {
+  position: fixed;
+  top: 0;
+  grid-area: nav;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 32px 9%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
 
-.logo span{
-    color: #0010f5;
+.logo {
+  font-size: 24px;
+  color: #0a1280;
+  text-decoration: none;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
+.logo span {
+  color: #0010f5;
 }
 
-.navbar .navbar__pages{
-    font-size: 20px;
-    margin-left: 25px;
-    color: #0010f5;
-    text-decoration: none;
-    transition: 0.5s;
-    transform: scale(1.0);
+.navbar {
+  display: flex;
+  align-items: center;
 }
 
-.navbar a:hover{
-    color:#0a1280;
-    font-size: 23px;
+.navbar .navbar__pages {
+  font-size: 20px;
+  margin-left: 25px;
+  color: #0010f5;
+  text-decoration: none;
+  transition: 0.5s;
+  transform: scale(1);
 }
 
-.tituloindex{
-    grid-area: titulo;
-    
+.navbar a:hover {
+  color: #0a1280;
+  font-size: 23px;
 }
 
-.inicio{
-    background-color: #0c08ff11;
+.headertienda {
+  position: fixed;
+  top: 0;
+  grid-area: nav;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 32px 9%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
 
-.inicio__titulo{
-    font-size: 80px; 
-    padding: 194px 100px 100px 100px;
-    text-align: center;
-    color:#030163;
-    background-color: #0a06fc0c;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+.headerlocal {
+  position: fixed;
+  width: 100%;
+  grid-area: nav;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-top: solid 1px #000000;
+  padding: 32px 9%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
 }
 
-.inicio__pagina{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.cuerpoindex {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 95px 300px 1500px 90px;
+  grid-template-areas: "nav" "titulo" "imagenuno" "pie";
+  background-color: #0c08ff11;
 }
 
-.inicio__pagina--imagen{
-    grid-area: imagenuno;
-    height: 300px;
-    width: 400px;
-    margin: 150px 100px 0px 100px;
-    border: solid 1px #000000;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);;
-    display:inline;
-    align-items: center;
-    transition: all 1.5s;
+.tituloindex {
+  grid-area: titulo;
 }
 
-.inicio__pagina--imagen:hover{
-    transform: scale(1.1);
+.cuerpo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 95px 290px 90px 500px 90px 500px 90px 500px 90px 500px 10px;
+  grid-template-areas: "nav        nav         nav" "titulo     titulo      titulo" "subtituloa subtituloa  subtituloa" "imga       pa          mapaa" "subtitulob subtitulob  subtitulob" "imgb       pb          mapab" "subtituloc subtituloc  subtituloc" "imgc       pc          mapac" "subtitulod subtitulod  subtitulod" "imgd       pd          mapad" "footer     footer      footer";
+  background-color: #0c08ff11;
 }
 
-.footer{
-    grid-area: pie;   
+.titulolocal {
+  grid-area: titulo;
 }
 
-.footer__info{
-    width: 100%;
-    height: 90px;
-    position:absolute;
-    text-align: center;
-    background-color: #000000a8;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.inicio__titulo {
+  font-size: 80px;
+  padding: 194px 100px 100px 100px;
+  text-align: center;
+  color: #030163;
+  background-color: #0a06fc0c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.footer__info--link{
-    font-size: 18px;
-    color: #ffffff;
-    text-decoration: none;
+.tituloPaginas {
+  font-size: 70px;
+  padding: 100px;
+  margin: 96px 0px 0px 0px;
+  text-align: center;
+  color: #030163;
+  background-color: #0a06fc0c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.footer__info--link:hover{
-    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-    color:#8381fa;
+.tituloTutoriales {
+  margin: 20px 10px 0px 0px;
+  font-size: 30px;
+  color: #061099;
+  text-align: center;
 }
 
-.footer__info--img{
-    height: 25px;
-    width: 25px;
-    align-items: center;
-    margin: 0px 0px 5px 10px
+.titulo__lista {
+  font-size: 40px;
+  color: #030235;
+  padding: 20px;
 }
 
-/*Termina Index*/
-
-
-/*Comienza Tienda*/
-
-.headertienda{
-    position: fixed;
-    top: 0;
-    grid-area: nav;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
-    padding: 32px 9%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-}
-.tituloPaginas{
-    font-size: 70px;
-    padding: 100px;
-    margin: 96px 0px 0px 0px;
-    text-align: center;
-    color:#030163;
-    background-color: #0a06fc0c;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+.tituloPaginaslocal {
+  font-size: 70px;
+  padding: 100px;
+  text-align: center;
+  color: #030163;
+  background-color: #0a06fc0c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.tarjetas{
-    display: flex;
-    justify-content: center
+.subtitulomoron {
+  grid-area: subtituloa;
+  font-size: 45px;
+  padding: 15px 0px 0px 50px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  background-color: #030235;
 }
 
-.subtituloTarjetas{
-    font-size: 45px;
-    padding: 15px 0px 15px 50px;
-    text-align: left;
-    border-top: solid 2px #000000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-    color:#ffffff;
-    background-color:#030235;
+.subtituloituzaingo {
+  grid-area: subtitulob;
+  font-size: 45px;
+  padding: 15px 0px 0px 50px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  background-color: #030235;
 }
 
-.tarjetas__productos{
-    width: 550px;
-    height:600px;
-    background-color: white;
-    border-radius: 10px;
-    padding:20px 20px 20px 20px;
-    margin:40px 40px 40px 40px;
+.subtitulohurlingam {
+  grid-area: subtituloc;
+  font-size: 45px;
+  padding: 15px 0px 0px 50px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  background-color: #030235;
 }
 
-
-
-.tarjetas__productos--articulos{
-    font-size: 25px;
-    margin: 20px 20px 20px 20px;
-    padding: 10px 10px 10px 10px;
-    border-bottom:solid 2px #030163;
+.subtitulomerlo {
+  grid-area: subtitulod;
+  font-size: 45px;
+  padding: 15px 0px 0px 50px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  background-color: #030235;
 }
 
-.tarjetas__productos--img{
-    height: 290px;
-    width: 290px;
+.inicio__pagina {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.tarjetas__productos--descripcion{
-    height: 95px;
-    font-size: 18px;
-    padding: 0px 20px 0px 20px;
+.inicio__pagina--imagen {
+  grid-area: imagenuno;
+  height: 300px;
+  width: 400px;
+  margin: 150px 100px 0px 100px;
+  border: solid 1px #000000;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  display: inline;
+  align-items: center;
+  transition: all 1.5s;
 }
 
-.boton{
-    font-size: 30px;
-    background-color: #d6d6d6;
-    color: #000000;
-    padding: 5px 5px 5px 5px;
-    border: solid 1px;
-    border-radius: 5px;
-    margin: 380px;
-    text-decoration: none;
-    transition: all 0.5s;
+.inicio__pagina--imagen:hover {
+  transform: scale(1.1);
 }
 
-.boton:hover{
-    font-size: 31px;
-    color: white;
-    background-color:#030163 ;
-    border:solid 2px #000000;
+.footer {
+  grid-area: pie;
 }
 
-
-/*Termina Tienda*/
-
-
-/*Comienza Tutoriales*/
-
-.tituloTutoriales{
-    margin: 20px 10px 0px 0px;
-    font-size: 30px;
-    color:#061099;
-    text-align: center;
+.footer__info {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  text-align: center;
+  background-color: #000000a8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.tutorial{
-    display: flex;
-    justify-content: center
+.footer__info .footer__info--link {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.tutorial__texto{
-    height: 400px;
-    width: 600px;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 30px 0px 0px 30px;
-    padding: 35px 35px 35px 35px;
-    background-color:#8381fa;
-    transition: all 1.5s;
+.footer__info .footer__info--link:hover {
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #8381fa;
 }
 
-.tutorial__texto:hover{
-    transform: scale(1.1);
-    border-radius: 15px;
+.footer__info .footer__info--img {
+  height: 25px;
+  width: 25px;
+  align-items: center;
+  margin: 0px 0px 5px 10px;
 }
 
-.titulo__lista{
-    font-size: 40px;
-    color:#030235;
-    padding: 20px;
+.footerlocal {
+  grid-area: footer;
 }
 
-.video{
-    height: 400px;
-    width: 600px;
-    margin: 30px 30px 30px 0px;
-    transition: all 1.5s;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3); ;
-    background-color: #000000;
+.tarjetas {
+  display: flex;
+  justify-content: center;
 }
 
-.video:hover{
-    transform: scale(1.1);
-    border-radius: 15px;
+.subtituloTarjetas {
+  font-size: 45px;
+  padding: 15px 0px 15px 50px;
+  text-align: left;
+  border-top: solid 2px #000000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  background-color: #030235;
 }
 
-/*Termina Tutoriales*/
-
-
-/*Comienza Locales*/
-
-.cuerpo{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 95px 290px 90px 500px 90px 500px 90px 500px 90px 500px 97px;
-    grid-template-areas: "nav        nav         nav"
-                         "titulo     titulo      titulo"
-                         "subtituloa subtituloa  subtituloa"
-                         "imga       pa          mapaa"
-                         "subtitulob subtitulob  subtitulob"
-                         "imgb       pb          mapab"
-                         "subtituloc subtituloc  subtituloc"
-                         "imgc       pc          mapac"
-                         "subtitulod subtitulod  subtitulod"
-                         "imgd       pd          mapad"
-                         "footer     footer      footer";
-    background-color: #0c08ff11;
+.tarjetas__productos {
+  width: 550px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 40px 40px 40px 40px;
 }
 
-.headerlocal{
-    position: fixed;
-    width: 100%;
-    grid-area: nav;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
-    border-top: solid 1px #000000;
-    padding: 32px 9%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
+.tarjetas__productos .tarjetas__productos--articulos {
+  font-size: 25px;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+  border-bottom: solid 2px #030163;
 }
 
-.titulolocal{
-    grid-area: titulo;
+.tarjetas__productos .tarjetas__productos--img {
+  height: 290px;
+  width: 290px;
 }
 
-.tituloPaginaslocal{
-    font-size: 70px;
-    padding: 100px;
-    text-align: center;
-    color:#030163;
-    background-color: #0a06fc0c;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+.tarjetas__productos .tarjetas__productos--descripcion {
+  height: 95px;
+  font-size: 18px;
+  padding: 0px 20px 0px 20px;
 }
 
-.subtitulomoron{
-    grid-area: subtituloa;
-    font-size: 45px;
-    padding: 15px 0px 0px 50px;
-    text-align: left;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-    color:#ffffff;
-    background-color:#030235;
+.tutorial {
+  display: flex;
+  justify-content: center;
 }
 
-.imglocal{
-    grid-area: imga;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.tutorial__texto {
+  height: 400px;
+  width: 600px;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 30px 0px 0px 30px;
+  padding: 35px 35px 35px 35px;
+  background-color: #8381fa;
+  transition: all 1.5s;
 }
 
-.pmoron{
-    grid-area: pa;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
+.tutorial__texto:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
 }
 
-.mapamoron{
-    grid-area: mapaa;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px #000000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.imglocal {
+  grid-area: imga;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.subtituloituzaingo{
-    grid-area: subtitulob;
-    font-size: 45px;
-    padding: 15px 0px 0px 50px;
-    text-align: left;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-    color:#ffffff;
-    background-color:#030235;;
+.pmoron {
+  grid-area: pa;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
 }
 
-.imglocali{
-    grid-area: imgb;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.mapamoron {
+  grid-area: mapaa;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  border: solid 1px #000000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.pituzaingo{
-    grid-area: pb;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
+.imglocali {
+  grid-area: imgb;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.mapaituzaingo{
-    grid-area: mapab;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px #000000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.pituzaingo {
+  grid-area: pb;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
 }
 
-.subtitulohurlingam{
-    grid-area: subtituloc;
-    font-size: 45px;
-    padding: 15px 0px 0px 50px;
-    text-align: left;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-    color:#ffffff;
-    background-color:#030235;
+.mapaituzaingo {
+  grid-area: mapab;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  border: solid 1px #000000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.imglocalh{
-    grid-area: imgc;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.imglocalh {
+  grid-area: imgc;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.phurlingam{
-    grid-area: pc;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
+.phurlingam {
+  grid-area: pc;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
 }
 
-.mapahurlingam{
-    grid-area: mapac;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px #000000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.mapahurlingam {
+  grid-area: mapac;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  border: solid 1px #000000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.subtitulomerlo{
-    grid-area: subtitulod;
-    font-size: 45px;
-    padding: 15px 0px 0px 50px;
-    text-align: left;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-    color:#ffffff;
-    background-color:#030235;
+.imglocalm {
+  grid-area: imgd;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.imglocalm{
-    grid-area: imgd;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.pmerlo {
+  grid-area: pd;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
 }
 
-.pmerlo{
-    grid-area: pd;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
+.mapamerlo {
+  grid-area: mapad;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  border: solid 1px #000000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.mapamerlo{
-    grid-area: mapad;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px #000000;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+.boton {
+  width: 120px;
+  font-size: 30px;
+  background-color: #d6d6d6;
+  color: #030163;
+  padding: 5px 5px 5px 5px;
+  border: solid 1px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 380px;
+  text-decoration: none;
+  transition: all 0.5s;
 }
 
-.footerlocal{
-    grid-area: footer;
+.boton:hover {
+  font-size: 31px;
+  color: white;
+  background-color: #030163;
+  border: solid 2px #000000;
+}
+
+.video {
+  height: 400px;
+  width: 600px;
+  margin: 30px 30px 30px 0px;
+  transition: all 1.5s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #000000;
+}
+
+.video:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 768px) {
-   
-    /** index **/
-
-    .cuerpoindex{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 235px 265px 4200px 100px; 
-        grid-template-areas: 
-        "nav"
-        "titulo"
-        "imagenuno"
-        "pie";
-    }
-
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        z-index: 100;
-    }
-
-    .inicio__titulo{
-        font-size: 80px; 
-        padding: 305px 100px 100px 100px;
-        text-align: center;
-        color:#030163;
-        background-color: #0a06fc0c;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
-    }
-
-    .footer__info{
-        width: 100%;
-        height: 90px;
-        text-align: center;
-        background-color: #000000a8;
-    }
-    
-    .footer__info--link{
-        font-size: 18px;
-        color: #ffffff;
-        margin: 0px 250px 0px 250px;
-    }
-    
-    .footer__info--img{
-        height: 25px;
-        width: 25px;
-        align-items: center;
-    }
-
-/** tienda **/
-
-/** locales **/
-
-    .tituloPaginas{
-        margin-top:235px;
-    }
-    
-    .cuerpo{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 205px 290px 90px 375px 375px 90px 375px 375px 90px 375px 375px 90px 375px 375px 97px;
-        grid-template-areas: "nav        nav         nav"
-                             "titulo     titulo      titulo"
-                             "subtituloa subtituloa  subtituloa"
-                             "pa         imga        imga"
-                             "pa         mapaa       mapaa"
-                             "subtitulob subtitulob  subtitulob"
-                             "pb         imgb        imgb"
-                             "pb         mapab       mapab"
-                             "subtituloc subtituloc  subtituloc"
-                             "pc         imgc        imgc"
-                             "pc         mapac       mapac"
-                             "subtitulod subtitulod  subtitulod"
-                             "pd         imgd        imgd"
-                             "pd         mapad       mapad"
-                             "footer     footer      footer";
-    }
-    .navbar .navbar__pages{
-        font-size: 35px;
-        margin: 15px 5px 0px 5px;
-        padding: 5px;
-        color: white;
-        transform: scale(1);
-        border: 1px solid;
-        border-radius: 15px;
-        background-color:#0a1280;
-    }
-    .logo{
-        font-size: 50px;
-        color: #0a1280;
-        text-align: center;
-    }
-    .headerlocal{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        z-index: 100;
-        width: 100%;
-    }
-    .tituloPaginaslocal{
-        font-size: 70px;
-        padding: 100px;
-    }
-    .subtitulomoron{
-        font-size: 65px;
-        padding: 0px 0px 5px 0px;
-        text-align: center;
-    }
-    .subtituloituzaingo{
-        font-size: 65px;
-        padding: 0px 0px 5px 0px;
-        text-align: center;
-    }
-    .subtitulohurlingam{
-        font-size: 65px;
-        padding: 0px 0px 5px 0px;
-        text-align: center;
-    }
-    .subtitulomerlo{
-        font-size: 65px;
-        padding: 0px 0px 5px 0px;
-        text-align: center;
-    }
-
-    .imglocal{
-        height: 290px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .imglocali{
-        height: 290px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .imglocalh{
-        height: 290px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .imglocalm{
-        height: 290px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .mapamoron{
-        height: 320px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .mapaituzaingo{
-        height: 320px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .mapahurlingam{
-        height: 320px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-
-    .mapamerlo{
-        height: 320px;
-        width: 290px;
-        border-radius: 25px;
-        margin: 25px;
-    }
-    .pituzaingo{
-        font-size: 25px;
-        color: #ffffff;
-        height: 700px;
-        width: 350px;
-        margin: 25px;
-        padding: 35px;
-        background-color:#8381fa;
-        border-radius: 8px;
-    }
-    .footer__info{
-        height: 100px;
-        width: 768px;
-        position: absolute;
-        text-align: center;
-        background-color: #000000a8;
-    }
-    
-    .footer__info--link{
+  /** index **/
+  .cuerpoindex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 235px 265px 4200px 100px;
+    grid-template-areas: "nav" "titulo" "imagenuno" "pie";
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 100;
+  }
+  .inicio__titulo {
+    font-size: 80px;
+    padding: 305px 100px 100px 100px;
+    text-align: center;
+    color: #030163;
+    background-color: #0a06fc0c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .footer__info {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    background-color: #000000a8;
+  }
+  .footer__info--link {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0px 250px 0px 250px;
+  }
+  .footer__info--img {
+    height: 25px;
+    width: 25px;
+    align-items: center;
+  }
+  /** tienda **/
+  /** locales **/
+  .tituloPaginas {
+    margin-top: 235px;
+  }
+  .cuerpo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 205px 290px 90px 375px 375px 90px 375px 375px 90px 375px 375px 90px 375px 375px 97px;
+    grid-template-areas: "nav        nav         nav" "titulo     titulo      titulo" "subtituloa subtituloa  subtituloa" "pa         imga        imga" "pa         mapaa       mapaa" "subtitulob subtitulob  subtitulob" "pb         imgb        imgb" "pb         mapab       mapab" "subtituloc subtituloc  subtituloc" "pc         imgc        imgc" "pc         mapac       mapac" "subtitulod subtitulod  subtitulod" "pd         imgd        imgd" "pd         mapad       mapad" "footer     footer      footer";
+  }
+  .navbar .navbar__pages {
+    font-size: 35px;
+    margin: 15px 5px 0px 5px;
+    padding: 5px;
+    color: white;
+    transform: scale(1);
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #0a1280;
+  }
+  .logo {
+    font-size: 50px;
+    color: #0a1280;
+    text-align: center;
+  }
+  .headerlocal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 100;
+    width: 100%;
+  }
+  .tituloPaginaslocal {
+    font-size: 70px;
+    padding: 100px;
+  }
+  .subtitulomoron {
+    font-size: 65px;
+    padding: 0px 0px 5px 0px;
+    text-align: center;
+  }
+  .subtituloituzaingo {
+    font-size: 65px;
+    padding: 0px 0px 5px 0px;
+    text-align: center;
+  }
+  .subtitulohurlingam {
+    font-size: 65px;
+    padding: 0px 0px 5px 0px;
+    text-align: center;
+  }
+  .subtitulomerlo {
+    font-size: 65px;
+    padding: 0px 0px 5px 0px;
+    text-align: center;
+  }
+  .imglocal {
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .imglocali {
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .imglocalh {
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .imglocalm {
+    height: 290px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .mapamoron {
+    height: 320px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .mapaituzaingo {
+    height: 320px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .mapahurlingam {
+    height: 320px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .mapamerlo {
+    height: 320px;
+    width: 290px;
+    border-radius: 25px;
+    margin: 25px;
+  }
+  .pituzaingo {
+    font-size: 25px;
+    color: #ffffff;
+    height: 700px;
+    width: 350px;
+    margin: 25px;
+    padding: 35px;
+    background-color: #8381fa;
+    border-radius: 8px;
+  }
+  .footer__info {
+    height: 100px;
+    width: 768px;
+    position: absolute;
+    text-align: center;
+    background-color: #000000a8;
+  }
+  .footer__info--link {
     font-size: 18px;
     color: #ffffff;
     margin: 0px 0px 0px 0px;
-    }
-
-    .footer__info--img{
+  }
+  .footer__info--img {
     height: 25px;
     width: 25px;
     align-items: center;
     align-content: center;
-    }
+  }
 }
-
-
 
 /*Termina Locales*/
-.subtitulo{
-    font-size: 40px;
-    color:#030235;
-    margin-top: 60px;
+.subtitulo {
+  font-size: 40px;
+  color: #030235;
+  margin-top: 60px;
 }
 
-.contenedortexto{
-    margin: 20px;
+.contenedortexto {
+  margin: 20px;
 }
 
-.contactostexto{
-    font-size: 25px;
-    color: #ffffff;
-    padding: 35px 35px 35px 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
-    margin-top: 50px;
+.contactostexto {
+  font-size: 25px;
+  color: #ffffff;
+  padding: 35px 35px 35px 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
+  margin-top: 50px;
 }
 
-.formulario{
-    margin: 50px 0px 50px 0px;
+.formulario {
+  margin: 50px 0px 50px 0px;
 }
-/*Comienza Contactos*/
-
-/*Termina Contactos*/
+/*# sourceMappingURL=style.css.map */

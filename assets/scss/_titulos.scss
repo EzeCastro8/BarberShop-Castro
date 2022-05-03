@@ -1,0 +1,80 @@
+.inicio__titulo{
+    font-size: 80px; 
+    padding: 194px 100px 100px 100px;
+    text-align: center;
+    color: map-get($colores , "azul" );
+    background-color: #0a06fc0c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+}
+
+.tituloPaginas{
+    font-size: 70px;
+    padding: 100px;
+    margin: 96px 0px 0px 0px;
+    text-align: center;
+    color: map-get($colores , "azul" );
+    background-color: #0a06fc0c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+}
+
+.tituloTutoriales{
+    margin: 20px 10px 0px 0px;
+    font-size: 30px;
+    color:#061099;
+    text-align: center;
+}
+
+.titulo__lista{
+    font-size: 40px;
+    color:#030235;
+    padding: 20px;
+}
+
+.tituloPaginaslocal{
+    font-size: 70px;
+    padding: 100px;
+    text-align: center;
+    color: map-get($colores , "azul" );
+    background-color: #0a06fc0c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+}
+
+.subtitulomoron{
+    grid-area: subtituloa;
+    font-size: 45px;
+    padding: 15px 0px 0px 50px;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    color:#ffffff;
+    background-color:#030235;
+}
+
+.subtituloituzaingo{
+    grid-area: subtitulob;
+    font-size: 45px;
+    padding: 15px 0px 0px 50px;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    color:#ffffff;
+    background-color:#030235;;
+}
+
+.subtitulohurlingam{
+    grid-area: subtituloc;
+    font-size: 45px;
+    padding: 15px 0px 0px 50px;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    color:#ffffff;
+    background-color:#030235;
+}
+
+.subtitulomerlo{
+    grid-area: subtitulod;
+    font-size: 45px;
+    padding: 15px 0px 0px 50px;
+    text-align: left;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    color:#ffffff;
+    background-color:#030235;
+}

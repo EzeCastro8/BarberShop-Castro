@@ -1,0 +1,23 @@
+.boton{
+    width: 120px;
+    font-size: 30px;
+    background-color: #d6d6d6;
+    color: map-get($colores , "azul" );
+    padding: 5px 5px 5px 5px;
+    border: solid 1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 380px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.boton:hover{
+    font-size: 31px;
+    color: white;
+    background-color:map-get($colores , "azul" ) ;
+    border:solid 2px map-get($colores , "negro" );
+}
+
+

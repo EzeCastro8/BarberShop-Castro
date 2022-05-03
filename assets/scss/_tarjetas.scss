@@ -1,0 +1,175 @@
+.tarjetas{
+    display: flex;
+    justify-content: center
+}
+
+.subtituloTarjetas{
+    font-size: 45px;
+    padding: 15px 0px 15px 50px;
+    text-align: left;
+    border-top: solid 2px map-get($colores , "negro" );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    color:#ffffff;
+    background-color:#030235;
+}
+
+.tarjetas__productos{
+    width: 550px;
+    height:600px;
+    background-color: white;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    margin:40px 40px 40px 40px;
+    .tarjetas__productos--articulos{
+        font-size: 25px;
+        margin: 20px 20px 20px 20px;
+        padding: 10px 10px 10px 10px;
+        border-bottom:solid 2px map-get($colores , "azul" );
+    }
+    .tarjetas__productos--img{
+        height: 290px;
+        width: 290px;
+    }
+    .tarjetas__productos--descripcion{
+        height: 95px;
+        font-size: 18px;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+.tutorial{
+    display: flex;
+    justify-content: center
+}
+
+.tutorial__texto{
+    height: 400px;
+    width: 600px;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 30px 0px 0px 30px;
+    padding: 35px 35px 35px 35px;
+    background-color:#8381fa;
+    transition: all 1.5s;
+}
+
+.tutorial__texto:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+.imglocal{
+    grid-area: imga;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.pmoron{
+    grid-area: pa;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px;
+    padding: 35px;
+    background-color:#8381fa;
+    border-radius: 8px;
+}
+
+.mapamoron{
+    grid-area: mapaa;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    border: solid 1px map-get($colores , "negro" );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.imglocali{
+    grid-area: imgb;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.pituzaingo{
+    grid-area: pb;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px;
+    padding: 35px;
+    background-color:#8381fa;
+    border-radius: 8px;
+}
+
+.mapaituzaingo{
+    grid-area: mapab;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    border: solid 1px map-get($colores , "negro" );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.imglocalh{
+    grid-area: imgc;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.phurlingam{
+    grid-area: pc;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px;
+    padding: 35px;
+    background-color:#8381fa;
+    border-radius: 8px;
+}
+
+.mapahurlingam{
+    grid-area: mapac;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    border: solid 1px map-get($colores , "negro" );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.imglocalm{
+    grid-area: imgd;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.pmerlo{
+    grid-area: pd;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px;
+    padding: 35px;
+    background-color:#8381fa;
+    border-radius: 8px;
+}
+
+.mapamerlo{
+    grid-area: mapad;
+    height: 450px;
+    width: 550px;
+    border-radius: 5px;
+    margin: 25px;
+    border: solid 1px map-get($colores , "negro" );
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}

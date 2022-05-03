@@ -1,0 +1,37 @@
+.cuerpoindex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 95px 300px 1500px 90px; 
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "imagenuno"
+    "pie";
+    background-color: #0c08ff11;
+}
+
+.tituloindex{
+    grid-area: titulo;  
+}
+
+.cuerpo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 95px 290px 90px 500px 90px 500px 90px 500px 90px 500px 10px;
+    grid-template-areas: "nav        nav         nav"
+                         "titulo     titulo      titulo"
+                         "subtituloa subtituloa  subtituloa"
+                         "imga       pa          mapaa"
+                         "subtitulob subtitulob  subtitulob"
+                         "imgb       pb          mapab"
+                         "subtituloc subtituloc  subtituloc"
+                         "imgc       pc          mapac"
+                         "subtitulod subtitulod  subtitulod"
+                         "imgd       pd          mapad"
+                         "footer     footer      footer";
+    background-color: #0c08ff11;
+}
+
+.titulolocal{
+    grid-area: titulo;
+}
