@@ -5,10 +5,11 @@
     transition: all 1.5s;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3); ;
     background-color: map-get($colores , "negro" );
+    &:hover{
+        transform: scale(1.1);
+        border-radius: 15px;
+    }
 }
 
-.video:hover{
-    transform: scale(1.1);
-    border-radius: 15px;
-}
+
 

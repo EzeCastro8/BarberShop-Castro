@@ -40,6 +40,11 @@ header {
   align-items: center;
 }
 
+.navbar a:hover {
+  color: #0a1280;
+  font-size: 23px;
+}
+
 .navbar .navbar__pages {
   font-size: 20px;
   margin-left: 25px;
@@ -47,11 +52,6 @@ header {
   text-decoration: none;
   transition: 0.5s;
   transform: scale(1);
-}
-
-.navbar a:hover {
-  color: #0a1280;
-  font-size: 23px;
 }
 
 .headertienda {
@@ -191,7 +191,7 @@ header {
   justify-content: center;
 }
 
-.inicio__pagina--imagen {
+.inicio__pagina .inicio__pagina--imagen {
   grid-area: imagenuno;
   height: 300px;
   width: 400px;
@@ -204,7 +204,7 @@ header {
   transition: all 1.5s;
 }
 
-.inicio__pagina--imagen:hover {
+.inicio__pagina .inicio__pagina--imagen:hover {
   transform: scale(1.1);
 }
 
@@ -292,7 +292,7 @@ header {
   justify-content: center;
 }
 
-.tutorial__texto {
+.tutorial .tutorial__texto {
   height: 400px;
   width: 600px;
   font-size: 20px;
@@ -303,7 +303,7 @@ header {
   transition: all 1.5s;
 }
 
-.tutorial__texto:hover {
+.tutorial .tutorial__texto:hover {
   transform: scale(1.1);
   border-radius: 15px;
 }

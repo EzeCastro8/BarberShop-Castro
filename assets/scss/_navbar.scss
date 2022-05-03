@@ -23,20 +23,18 @@ header{
 .navbar{
     display: flex;
     align-items: center;
-}
-
-.navbar .navbar__pages{
-    font-size: 20px;
-    margin-left: 25px;
-    color: #0010f5;
-    text-decoration: none;
-    transition: 0.5s;
-    transform: scale(1.0);
-}
-
-.navbar a:hover{
-    color:#0a1280;
-    font-size: 23px;
+    & a:hover{
+        color:#0a1280;
+        font-size: 23px;
+    }
+    .navbar__pages{
+        font-size: 20px;
+        margin-left: 25px;
+        color: #0010f5;
+        text-decoration: none;
+        transition: 0.5s;
+        transform: scale(1.0);
+    }
 }
 
 .headertienda{

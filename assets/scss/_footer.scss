@@ -15,10 +15,10 @@
         font-size: 18px;
         color: #ffffff;
         text-decoration: none;
-    }
-    .footer__info--link:hover{
-        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-        color:#8381fa;
+        &:hover{
+            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            color:#8381fa;
+        }
     }
     .footer__info--img{
         height: 25px;
