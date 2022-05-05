@@ -37,24 +37,50 @@
     }
 }
 
+.tarjetas__productosult{
+    width: 550px;
+    height:600px;
+    background-color: white;
+    border-radius: 10px;
+    padding:20px 20px 20px 20px;
+    margin:40px 40px 40px 40px;
+    .tarjetas__productos--articulos{
+        font-size: 25px;
+        margin: 20px 20px 20px 20px;
+        padding: 10px 10px 10px 10px;
+        border-bottom:solid 2px map-get($colores , "azul" );
+    }
+    .tarjetas__productos--img{
+        height: 290px;
+        width: 290px;
+    }
+    .tarjetas__productos--descripcion{
+        height: 95px;
+        font-size: 18px;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
 .tutorial{
     display: flex;
     justify-content: center;
-    .tutorial__texto{
-        height: 400px;
-        width: 600px;
-        font-size: 20px;
-        color: #ffffff;
-        margin: 30px 0px 0px 30px;
-        padding: 35px 35px 35px 35px;
-        background-color:#8381fa;
-        transition: all 1.5s;
-        &:hover{
-            transform: scale(1.1);
-            border-radius: 15px;
-        }
+}
+
+.tutorial__textoult{
+    height: 400px;
+    width: 600px;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 30px 0px 0px 30px;
+    padding: 35px 35px 35px 35px;
+    background-color:#8381fa;
+    transition: all 1.5s;
+    &:hover{
+        transform: scale(1.1);
+        border-radius: 15px;
     }
 }
+
 
 .imglocal{
     grid-area: imga;
@@ -170,4 +196,17 @@
     margin: 25px;
     border: solid 1px map-get($colores , "negro" );
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+}
+
+.contactostexto{
+    font-size: 25px;
+    color: #ffffff;
+    padding: 35px 35px 35px 35px;
+    background-color:#8381fa;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.formulario{
+    margin: 50px 0px 50px 0px;
 }

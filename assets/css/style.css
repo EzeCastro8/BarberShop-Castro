@@ -123,6 +123,16 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.tituloTutorialbt {
+  font-size: 70px;
+  padding: 100px;
+  margin: 96px 0px 0px 0px;
+  text-align: center;
+  color: #030163;
+  background-color: #0a06fc0c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .tituloTutoriales {
   margin: 20px 10px 0px 0px;
   font-size: 30px;
@@ -304,12 +314,39 @@ header {
   padding: 0px 20px 0px 20px;
 }
 
+.tarjetas__productosult {
+  width: 550px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  margin: 40px 40px 40px 40px;
+}
+
+.tarjetas__productosult .tarjetas__productos--articulos {
+  font-size: 25px;
+  margin: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
+  border-bottom: solid 2px #030163;
+}
+
+.tarjetas__productosult .tarjetas__productos--img {
+  height: 290px;
+  width: 290px;
+}
+
+.tarjetas__productosult .tarjetas__productos--descripcion {
+  height: 95px;
+  font-size: 18px;
+  padding: 0px 20px 0px 20px;
+}
+
 .tutorial {
   display: flex;
   justify-content: center;
 }
 
-.tutorial .tutorial__texto {
+.tutorial__textoult {
   height: 400px;
   width: 600px;
   font-size: 20px;
@@ -320,7 +357,7 @@ header {
   transition: all 1.5s;
 }
 
-.tutorial .tutorial__texto:hover {
+.tutorial__textoult:hover {
   transform: scale(1.1);
   border-radius: 15px;
 }
@@ -441,6 +478,19 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.contactostexto {
+  font-size: 25px;
+  color: #ffffff;
+  padding: 35px 35px 35px 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.formulario {
+  margin: 50px 0px 50px 0px;
+}
+
 .boton {
   width: 120px;
   font-size: 30px;
@@ -478,6 +528,7 @@ header {
 }
 
 @media (max-width: 480px) {
+  /*INDEX*/
   .header {
     position: fixed;
     top: 0;
@@ -562,6 +613,211 @@ header {
     width: 25px;
     align-items: center;
     margin: 0px 0px 5px 10px;
+  }
+  /*TIENDA*/
+  .headertienda {
+    position: fixed;
+    top: 0;
+    grid-area: nav;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 32px 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 100;
+  }
+  .tituloPaginas {
+    font-size: 80px;
+    padding: 194px 0px 100px 0px;
+  }
+  .subtituloTarjetas {
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+  }
+  .tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .tarjetas__productos {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin: 40px 0px 40px 0px;
+  }
+  .tarjetas__productos .tarjetas__productos--articulos {
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+    padding: 10px 10px 10px 10px;
+    border-bottom: solid 2px #030163;
+  }
+  .tarjetas__productos .tarjetas__productos--img {
+    height: 290px;
+    width: 290px;
+  }
+  .tarjetas__productos .tarjetas__productos--descripcion {
+    height: 95px;
+    font-size: 18px;
+    padding: 0px 20px 0px 20px;
+  }
+  .boton {
+    margin: 0px 0px 0px 300px;
+  }
+  .tarjetas__productosult {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin: 40px 0px 150px 0px;
+  }
+  /*TUTORIALES*/
+  .tituloTutorialbt {
+    font-size: 90px;
+    padding: 125px 0px 50px 0px;
+    width: 100%;
+  }
+  .video {
+    height: 400px;
+    width: 90%;
+    margin: 30px 0px 0px 0px;
+  }
+  .tutorial__textoult {
+    width: 100%;
+    margin: 30px 0px 90px 0px;
+    padding: 35px 35px 35px 35px;
+    background-color: #8381fa;
+    transition: all 1.5s;
+  }
+  .tutorial__textoult:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
+  /*LOCALES*/
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 305px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 500px 0px;
+    grid-template-areas: "nav" "titulo" "subtituloa" "imga" "pa" "mapaa" "subtitulob" "imgb" "pb" "mapab" "subtituloc" "imgc"  "pc" "mapac" "subtitulod" "imgd" "pd"  "mapad" "footer";
+    background-color: #0c08ff11;
+  }
+  .headerlocal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tituloPaginaslocal {
+    font-size: 80px;
+    padding: 57px;
+  }
+  .imglocal {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .pmoron {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 0px 10px 0px;
+    padding: 35px;
+    background-color: #8381fa;
+    border-radius: 8px;
+  }
+  .mapamoron {
+    grid-area: mapaa;
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    border: solid 1px #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .imglocali {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .pituzaingo {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 0px 10px 0px;
+    padding: 35px;
+    background-color: #8381fa;
+    border-radius: 8px;
+  }
+  .mapaituzaingo {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    border: solid 1px #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .imglocalh {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .phurlingam {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 0px 10px 0px;
+    padding: 35px;
+    background-color: #8381fa;
+    border-radius: 8px;
+  }
+  .mapahurlingam {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    border: solid 1px #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .imglocalm {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  .pmerlo {
+    font-size: 20px;
+    color: #ffffff;
+    margin: 10px 0px 10px 0px;
+    padding: 35px;
+    background-color: #8381fa;
+    border-radius: 8px;
+  }
+  .mapamerlo {
+    height: 350px;
+    width: 480px;
+    border-radius: 5px;
+    margin: 10px 0px 100px 0px;
+    border: solid 1px #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,16 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
 }
 
+.tituloTutorialbt{
+    font-size: 70px;
+    padding: 100px;
+    margin: 96px 0px 0px 0px;
+    text-align: center;
+    color: map-get($colores , "azul" );
+    background-color: #0a06fc0c;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .2);
+}
+
 .tituloTutoriales{
     margin: 20px 10px 0px 0px;
     font-size: 30px;
