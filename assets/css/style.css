@@ -80,6 +80,11 @@ header {
   z-index: 100;
 }
 
+.navtuto {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cuerpoindex {
   display: grid;
   grid-template-columns: 1fr;
@@ -676,6 +681,11 @@ header {
     margin: 40px 0px 150px 0px;
   }
   /*TUTORIALES*/
+  .navegador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .tituloTutorialbt {
     font-size: 90px;
     padding: 125px 0px 50px 0px;

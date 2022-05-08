@@ -161,6 +161,12 @@
     }
 
     /*TUTORIALES*/
+
+    .navegador{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .tituloTutorialbt{
         font-size: 90px;
