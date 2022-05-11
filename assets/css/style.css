@@ -206,7 +206,7 @@ header {
   justify-content: center;
 }
 
-.inicio__pagina .inicio__pagina--imagen {
+.inicio__pagina .inicio__pagina--imagen, .inicio__pagina .inicio__pagina--imagenult {
   grid-area: imagenuno;
   height: 300px;
   width: 400px;
@@ -219,24 +219,7 @@ header {
   transition: all 1.5s;
 }
 
-.inicio__pagina .inicio__pagina--imagen:hover {
-  transform: scale(1.1);
-}
-
-.inicio__pagina .inicio__pagina--imagenult {
-  grid-area: imagenuno;
-  height: 300px;
-  width: 400px;
-  margin: 150px 100px 0px 100px;
-  border: solid 1px #000000;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  display: inline;
-  align-items: center;
-  transition: all 1.5s;
-}
-
-.inicio__pagina .inicio__pagina--imagenult:hover {
+.inicio__pagina .inicio__pagina--imagen:hover, .inicio__pagina .inicio__pagina--imagenult:hover {
   transform: scale(1.1);
 }
 
@@ -292,7 +275,7 @@ header {
   background-color: #030235;
 }
 
-.tarjetas__productos {
+.tarjetas__productos, .tarjetas__productosult {
   width: 550px;
   height: 600px;
   background-color: white;
@@ -301,46 +284,19 @@ header {
   margin: 40px 40px 40px 40px;
 }
 
-.tarjetas__productos .tarjetas__productos--articulos {
+.tarjetas__productos .tarjetas__productos--articulos, .tarjetas__productosult .tarjetas__productos--articulos {
   font-size: 25px;
   margin: 20px 20px 20px 20px;
   padding: 10px 10px 10px 10px;
   border-bottom: solid 2px #030163;
 }
 
-.tarjetas__productos .tarjetas__productos--img {
+.tarjetas__productos .tarjetas__productos--img, .tarjetas__productosult .tarjetas__productos--img {
   height: 290px;
   width: 290px;
 }
 
-.tarjetas__productos .tarjetas__productos--descripcion {
-  height: 95px;
-  font-size: 18px;
-  padding: 0px 20px 0px 20px;
-}
-
-.tarjetas__productosult {
-  width: 550px;
-  height: 600px;
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px 20px 20px 20px;
-  margin: 40px 40px 40px 40px;
-}
-
-.tarjetas__productosult .tarjetas__productos--articulos {
-  font-size: 25px;
-  margin: 20px 20px 20px 20px;
-  padding: 10px 10px 10px 10px;
-  border-bottom: solid 2px #030163;
-}
-
-.tarjetas__productosult .tarjetas__productos--img {
-  height: 290px;
-  width: 290px;
-}
-
-.tarjetas__productosult .tarjetas__productos--descripcion {
+.tarjetas__productos .tarjetas__productos--descripcion, .tarjetas__productosult .tarjetas__productos--descripcion {
   height: 95px;
   font-size: 18px;
   padding: 0px 20px 0px 20px;
@@ -376,8 +332,65 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.imglocali {
+  grid-area: imgb;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.imglocalh {
+  grid-area: imgc;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.imglocalm {
+  grid-area: imgd;
+  height: 450px;
+  width: 550px;
+  border-radius: 5px;
+  margin: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .pmoron {
   grid-area: pa;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
+}
+
+.pituzaingo {
+  grid-area: pb;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
+}
+
+.phurlingam {
+  grid-area: pc;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 25px;
+  padding: 35px;
+  background-color: #8381fa;
+  border-radius: 8px;
+}
+
+.pmerlo {
+  grid-area: pd;
   font-size: 20px;
   color: #ffffff;
   margin: 25px;
@@ -396,25 +409,6 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.imglocali {
-  grid-area: imgb;
-  height: 450px;
-  width: 550px;
-  border-radius: 5px;
-  margin: 25px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.pituzaingo {
-  grid-area: pb;
-  font-size: 20px;
-  color: #ffffff;
-  margin: 25px;
-  padding: 35px;
-  background-color: #8381fa;
-  border-radius: 8px;
-}
-
 .mapaituzaingo {
   grid-area: mapab;
   height: 450px;
@@ -425,25 +419,6 @@ header {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.imglocalh {
-  grid-area: imgc;
-  height: 450px;
-  width: 550px;
-  border-radius: 5px;
-  margin: 25px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.phurlingam {
-  grid-area: pc;
-  font-size: 20px;
-  color: #ffffff;
-  margin: 25px;
-  padding: 35px;
-  background-color: #8381fa;
-  border-radius: 8px;
-}
-
 .mapahurlingam {
   grid-area: mapac;
   height: 450px;
@@ -452,25 +427,6 @@ header {
   margin: 25px;
   border: solid 1px #000000;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.imglocalm {
-  grid-area: imgd;
-  height: 450px;
-  width: 550px;
-  border-radius: 5px;
-  margin: 25px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.pmerlo {
-  grid-area: pd;
-  font-size: 20px;
-  color: #ffffff;
-  margin: 25px;
-  padding: 35px;
-  background-color: #8381fa;
-  border-radius: 8px;
 }
 
 .mapamerlo {
@@ -487,6 +443,7 @@ header {
   font-size: 25px;
   color: #ffffff;
   padding: 35px 35px 35px 35px;
+  margin: 0px 50px 50px 50px;
   background-color: #8381fa;
   border-radius: 8px;
   margin-top: 50px;
@@ -572,7 +529,7 @@ header {
     background-color: #0a06fc0c;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
-  .inicio__pagina .inicio__pagina--imagen {
+  .inicio__pagina .inicio__pagina--imagen, .inicio__pagina .inicio__pagina--imagenult {
     grid-area: imagenuno;
     height: 300px;
     width: 400px;
@@ -646,7 +603,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .tarjetas__productos {
+  .tarjetas__productos, .tarjetas__productosult {
     width: 100%;
     height: 600px;
     background-color: white;
@@ -654,17 +611,17 @@ header {
     padding: 20px 20px 20px 20px;
     margin: 40px 0px 40px 0px;
   }
-  .tarjetas__productos .tarjetas__productos--articulos {
+  .tarjetas__productos .tarjetas__productos--articulos, .tarjetas__productosult .tarjetas__productos--articulos {
     font-size: 25px;
     margin: 20px 0px 20px 0px;
     padding: 10px 10px 10px 10px;
     border-bottom: solid 2px #030163;
   }
-  .tarjetas__productos .tarjetas__productos--img {
+  .tarjetas__productos .tarjetas__productos--img, .tarjetas__productosult .tarjetas__productos--img {
     height: 290px;
     width: 290px;
   }
-  .tarjetas__productos .tarjetas__productos--descripcion {
+  .tarjetas__productos .tarjetas__productos--descripcion, .tarjetas__productosult .tarjetas__productos--descripcion {
     height: 95px;
     font-size: 18px;
     padding: 0px 20px 0px 20px;

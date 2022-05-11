@@ -38,27 +38,7 @@
 }
 
 .tarjetas__productosult{
-    width: 550px;
-    height:600px;
-    background-color: white;
-    border-radius: 10px;
-    padding:20px 20px 20px 20px;
-    margin:40px 40px 40px 40px;
-    .tarjetas__productos--articulos{
-        font-size: 25px;
-        margin: 20px 20px 20px 20px;
-        padding: 10px 10px 10px 10px;
-        border-bottom:solid 2px map-get($colores , "azul" );
-    }
-    .tarjetas__productos--img{
-        height: 290px;
-        width: 290px;
-    }
-    .tarjetas__productos--descripcion{
-        height: 95px;
-        font-size: 18px;
-        padding: 0px 20px 0px 20px;
-    }
+    @extend .tarjetas__productos
 }
 
 .tutorial{
@@ -81,127 +61,86 @@
     }
 }
 
-
+@mixin img ($grid, $alto, $ancho, $bordeesquina, $margen, $sombra){
+    grid-area: $grid;
+    height: $alto;
+    width: $ancho;
+    border-radius: $bordeesquina;
+    margin: $margen;
+    box-shadow: $sombra;
+}
 .imglocal{
-    grid-area: imga;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-}
-
-.pmoron{
-    grid-area: pa;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
-}
-
-.mapamoron{
-    grid-area: mapaa;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px map-get($colores , "negro" );
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    @include img(imga, 450px, 550px, 5px, 25px, 0 8px 16px rgba(0, 0, 0, .3))
 }
 
 .imglocali{
-    grid-area: imgb;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-}
-
-.pituzaingo{
-    grid-area: pb;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
-}
-
-.mapaituzaingo{
-    grid-area: mapab;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px map-get($colores , "negro" );
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    @include img(imgb, 450px, 550px, 5px, 25px, 0 8px 16px rgba(0, 0, 0, .3))
 }
 
 .imglocalh{
-    grid-area: imgc;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
-}
-
-.phurlingam{
-    grid-area: pc;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
-}
-
-.mapahurlingam{
-    grid-area: mapac;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px map-get($colores , "negro" );
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    @include img(imgc, 450px, 550px, 5px, 25px, 0 8px 16px rgba(0, 0, 0, .3))
 }
 
 .imglocalm{
-    grid-area: imgd;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    @include img(imgd, 450px, 550px, 5px, 25px, 0 8px 16px rgba(0, 0, 0, .3))
+}
+
+@mixin parrafo ($grid, $fuente, $color, $margen, $padding, $fondo, $bordeesquina){
+    grid-area: $grid;
+    font-size: $fuente;
+    color: $color;
+    margin: $margen;
+    padding: $padding;
+    background-color:$fondo;
+    border-radius: $bordeesquina;
+}
+
+.pmoron{
+    @include parrafo(pa, 20px, #ffffff, 25px, 35px, #8381fa, 8px)
+}
+
+.pituzaingo{
+    @include parrafo(pb, 20px, #ffffff, 25px, 35px, #8381fa, 8px)
+}
+
+.phurlingam{
+    @include parrafo(pc, 20px, #ffffff, 25px, 35px, #8381fa, 8px)
 }
 
 .pmerlo{
-    grid-area: pd;
-    font-size: 20px;
-    color: #ffffff;
-    margin: 25px;
-    padding: 35px;
-    background-color:#8381fa;
-    border-radius: 8px;
+    @include parrafo(pd, 20px, #ffffff, 25px, 35px, #8381fa, 8px)
+}
+
+@mixin mapa ($grid, $alto, $ancho, $bordeesquina, $margen, $borde, $sombra){
+    grid-area: $grid;
+    height: $alto;
+    width: $ancho;
+    border-radius: $bordeesquina;
+    margin: $margen;
+    border: $borde;
+    box-shadow: $sombra;
+}
+.mapamoron{
+    @include mapa(mapaa, 450px, 550px, 5px, 25px, solid 1px map-get($colores , "negro" ), 0 8px 16px rgba(0, 0, 0, .3))
+}
+
+.mapaituzaingo{
+    @include mapa(mapab, 450px, 550px, 5px, 25px, solid 1px map-get($colores , "negro" ), 0 8px 16px rgba(0, 0, 0, .3))
+}
+
+.mapahurlingam{
+    @include mapa(mapac, 450px, 550px, 5px, 25px, solid 1px map-get($colores , "negro" ), 0 8px 16px rgba(0, 0, 0, .3))
 }
 
 .mapamerlo{
-    grid-area: mapad;
-    height: 450px;
-    width: 550px;
-    border-radius: 5px;
-    margin: 25px;
-    border: solid 1px map-get($colores , "negro" );
-    box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
+    @include mapa(mapad, 450px, 550px, 5px, 25px, solid 1px map-get($colores , "negro" ), 0 8px 16px rgba(0, 0, 0, .3))
 }
 
 .contactostexto{
     font-size: 25px;
     color: #ffffff;
     padding: 35px 35px 35px 35px;
+    margin: 0px 50px 50px 50px;
     background-color:#8381fa;
     border-radius: 8px;
     margin-top: 50px;
