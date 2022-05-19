@@ -1,6 +1,6 @@
 .boton{
     width: 120px;
-    font-size: 30px;
+    font-size: 1.8rem;
     background-color: #d6d6d6;
     color: map-get($colores , "azul" );
     padding: 5px 5px 5px 5px;
@@ -12,9 +12,14 @@
     text-decoration: none;
     transition: all 0.5s;
     &:hover{
-        font-size: 31px;
+        font-size: 1.9rem;
         color: white;
         background-color:map-get($colores , "azul" ) ;
         border:solid 2px map-get($colores , "negro" );
     }
 }
+
+.botonform{
+    width: 30%;
+}
+

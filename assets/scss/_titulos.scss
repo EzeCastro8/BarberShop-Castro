@@ -1,5 +1,5 @@
 .inicio__titulo{
-    font-size: 80px; 
+    font-size: 5rem; 
     padding: 194px 100px 100px 100px;
     text-align: center;
     color: map-get($colores , "azul" );
@@ -8,7 +8,7 @@
 }
 
 .tituloPaginas{
-    font-size: 70px;
+    font-size: 4.4rem;
     padding: 100px;
     margin: 96px 0px 0px 0px;
     text-align: center;
@@ -18,7 +18,7 @@
 }
 
 .tituloTutorialbt{
-    font-size: 70px;
+    font-size: 4.4rem;
     padding: 100px;
     margin: 96px 0px 0px 0px;
     text-align: center;
@@ -29,19 +29,20 @@
 
 .tituloTutoriales{
     margin: 20px 10px 0px 0px;
-    font-size: 30px;
-    color:#061099;
+    font-size: 2.5rem;
+    color:#030235;
     text-align: center;
+    padding: 50px 0px 10px 0px;
 }
 
 .titulo__lista{
-    font-size: 40px;
-    color:#030235;
+    font-size: 30px;
+    color:#061099;
     padding: 20px;
 }
 
 .tituloPaginaslocal{
-    font-size: 70px;
+    font-size: 4.4rem;
     padding: 100px;
     text-align: center;
     color: map-get($colores , "azul" );
@@ -51,7 +52,7 @@
 
 .subtitulomoron{
     grid-area: subtituloa;
-    font-size: 45px;
+    font-size: 2.8rem;
     padding: 15px 0px 0px 50px;
     text-align: left;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
@@ -61,7 +62,7 @@
 
 .subtituloituzaingo{
     grid-area: subtitulob;
-    font-size: 45px;
+    font-size: 2.8rem;
     padding: 15px 0px 0px 50px;
     text-align: left;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
@@ -71,7 +72,7 @@
 
 .subtitulohurlingam{
     grid-area: subtituloc;
-    font-size: 45px;
+    font-size: 2.8rem;
     padding: 15px 0px 0px 50px;
     text-align: left;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
@@ -81,7 +82,7 @@
 
 .subtitulomerlo{
     grid-area: subtitulod;
-    font-size: 45px;
+    font-size: 2.8rem;
     padding: 15px 0px 0px 50px;
     text-align: left;
     box-shadow: 0 8px 16px rgba(0, 0, 0, .3);

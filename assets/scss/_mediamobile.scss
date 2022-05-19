@@ -3,7 +3,7 @@
     /*INDEX*/
 
     .header{
-        position: fixed;
+        position: absolute;
         top: 0;
         width: 100%;
         display: flex;
@@ -14,29 +14,36 @@
 
     .logo{
         font-size: 40px;
+        border-bottom: solid;
     }
 
     .navbar{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
         & a:hover{
             color:#0a1280;
             font-size: 25px;
         }
         .navbar__pages{
+            padding: 0px 10px 0px 10px;
             font-size: 23px;
             margin: 0px 10px 0px 10px;
-            color: #ffffff;
-            background-color: #0a1280;
-            border: solid 2px rgb(0, 0, 0);
-            border-radius: 10px;
+            color: #0a1280;
+            border-bottom: solid 1px;
         }
     }
+
+    .botonpaginas{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px 5px 0px;
+    }
+
     .inicio__titulo{
         width: 100%;
         font-size: 80px; 
-        padding: 194px 0px 100px 0px;
+        padding: 470px 0px 100px 0px;
         text-align: center;
         color: map-get($colores , "azul" );
         background-color: #0a06fc0c;
@@ -95,7 +102,7 @@
     /*TIENDA*/
     
     .headertienda{
-        position: fixed;
+        position: absolute;
         top: 0;
         grid-area: nav;
         width: 100%;
@@ -110,7 +117,7 @@
 
     .tituloPaginas{
         font-size: 80px;
-        padding: 194px 0px 100px 0px;
+        padding: 440px 0px 130px 0px;
     }
 
     .subtituloTarjetas{
@@ -169,8 +176,8 @@
     }
     
     .tituloTutorialbt{
-        font-size: 90px;
-        padding: 125px 0px 50px 0px;
+        font-size: 80px;
+        padding: 390px 0px 85px 0px;
         width: 100%;
     }
     
@@ -178,6 +185,11 @@
         height: 400px;
         width: 90%;
         margin: 30px 0px 0px 0px;
+    }
+
+    .tutorial{
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .tutorial__textoult{
@@ -196,7 +208,7 @@
     .cuerpo{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 180px 305px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 500px 0px;
+        grid-template-rows: 395px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 500px 0px;
         grid-template-areas: "nav"
                              "titulo"
                              "subtituloa"
@@ -219,6 +231,7 @@
         background-color: #0c08ff11;
     }
     .headerlocal{
+        position: absolute;
         display: flex;
         flex-wrap:wrap;
         justify-content: center;
@@ -226,13 +239,13 @@
 
     .tituloPaginaslocal{
         font-size: 80px;
-        padding: 57px;
+        padding: 95px 0px 117px 0px;
     }
 
     .imglocal{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -241,19 +254,20 @@
     }
 
     .pmoron{
+        width: 100%;
         font-size: 20px;
         color: #ffffff;
         margin: 10px 0px 10px 0px;
         padding: 35px;
         background-color:#8381fa;
-        border-radius: 8px;
+        border-radius: 0px;
     }
 
     .mapamoron{
         grid-area: mapaa;
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         margin: 10px 0px 10px 0px;
         border: solid 1px map-get($colores , "negro" );
         box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
@@ -261,8 +275,8 @@
 
     .imglocali{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -271,18 +285,19 @@
     }
     
     .pituzaingo{
+        width: 100%;
         font-size: 20px;
         color: #ffffff;
         margin: 10px 0px 10px 0px;
         padding: 35px;
         background-color:#8381fa;
-        border-radius: 8px;
+        border-radius: 0px;
     }
     
     .mapaituzaingo{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         margin: 10px 0px 10px 0px;
         border: solid 1px map-get($colores , "negro" );
         box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
@@ -290,8 +305,8 @@
     
     .imglocalh{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -300,18 +315,19 @@
     }
     
     .phurlingam{
+        width: 100%;
         font-size: 20px;
         color: #ffffff;
         margin: 10px 0px 10px 0px;
         padding: 35px;
         background-color:#8381fa;
-        border-radius: 8px;
+        border-radius: 0px;
     }
     
     .mapahurlingam{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         margin: 10px 0px 10px 0px;
         border: solid 1px map-get($colores , "negro" );
         box-shadow: 0 8px 16px rgba(0, 0, 0, .3);
@@ -319,8 +335,8 @@
     
     .imglocalm{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -329,18 +345,19 @@
     }
     
     .pmerlo{
+        width: 100%;
         font-size: 20px;
         color: #ffffff;
         margin: 10px 0px 10px 0px;
         padding: 35px;
         background-color:#8381fa;
-        border-radius: 8px;
+        border-radius: 0px;
     }
     
     .mapamerlo{
         height: 350px;
-        width: 480px;
-        border-radius: 5px;
+        width: 100%;
+        border-radius: 0px;
         margin: 10px 0px 100px 0px;
         border: solid 1px map-get($colores , "negro" );
         box-shadow: 0 8px 16px rgba(0, 0, 0, .3);

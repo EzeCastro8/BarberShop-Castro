@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #0a1280;
   text-decoration: none;
 }
@@ -42,12 +42,12 @@ header {
 
 .navbar a:hover {
   color: #0a1280;
-  font-size: 23px;
+  font-size: 1.4rem;
 }
 
 .navbar .navbar__pages {
-  font-size: 20px;
-  margin-left: 25px;
+  font-size: 1.25rem;
+  margin-left: 2.1rem;
   color: #0010f5;
   text-decoration: none;
   transition: 0.5s;
@@ -110,7 +110,7 @@ header {
 }
 
 .inicio__titulo {
-  font-size: 80px;
+  font-size: 5rem;
   padding: 194px 100px 100px 100px;
   text-align: center;
   color: #030163;
@@ -119,7 +119,7 @@ header {
 }
 
 .tituloPaginas {
-  font-size: 70px;
+  font-size: 4.4rem;
   padding: 100px;
   margin: 96px 0px 0px 0px;
   text-align: center;
@@ -129,7 +129,7 @@ header {
 }
 
 .tituloTutorialbt {
-  font-size: 70px;
+  font-size: 4.4rem;
   padding: 100px;
   margin: 96px 0px 0px 0px;
   text-align: center;
@@ -140,19 +140,20 @@ header {
 
 .tituloTutoriales {
   margin: 20px 10px 0px 0px;
-  font-size: 30px;
-  color: #061099;
+  font-size: 2.5rem;
+  color: #030235;
   text-align: center;
+  padding: 50px 0px 10px 0px;
 }
 
 .titulo__lista {
-  font-size: 40px;
-  color: #030235;
+  font-size: 30px;
+  color: #061099;
   padding: 20px;
 }
 
 .tituloPaginaslocal {
-  font-size: 70px;
+  font-size: 4.4rem;
   padding: 100px;
   text-align: center;
   color: #030163;
@@ -162,7 +163,7 @@ header {
 
 .subtitulomoron {
   grid-area: subtituloa;
-  font-size: 45px;
+  font-size: 2.8rem;
   padding: 15px 0px 0px 50px;
   text-align: left;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -172,7 +173,7 @@ header {
 
 .subtituloituzaingo {
   grid-area: subtitulob;
-  font-size: 45px;
+  font-size: 2.8rem;
   padding: 15px 0px 0px 50px;
   text-align: left;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -182,7 +183,7 @@ header {
 
 .subtitulohurlingam {
   grid-area: subtituloc;
-  font-size: 45px;
+  font-size: 2.8rem;
   padding: 15px 0px 0px 50px;
   text-align: left;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -192,7 +193,7 @@ header {
 
 .subtitulomerlo {
   grid-area: subtitulod;
-  font-size: 45px;
+  font-size: 2.8rem;
   padding: 15px 0px 0px 50px;
   text-align: left;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -239,7 +240,7 @@ header {
 }
 
 .footer__info .footer__info--link {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #ffffff;
   text-decoration: none;
 }
@@ -266,7 +267,7 @@ header {
 }
 
 .subtituloTarjetas {
-  font-size: 45px;
+  font-size: 2.8rem;
   padding: 15px 0px 15px 50px;
   text-align: left;
   border-top: solid 2px #000000;
@@ -285,7 +286,7 @@ header {
 }
 
 .tarjetas__productos .tarjetas__productos--articulos, .tarjetas__productosult .tarjetas__productos--articulos {
-  font-size: 25px;
+  font-size: 1.6rem;
   margin: 20px 20px 20px 20px;
   padding: 10px 10px 10px 10px;
   border-bottom: solid 2px #030163;
@@ -298,19 +299,20 @@ header {
 
 .tarjetas__productos .tarjetas__productos--descripcion, .tarjetas__productosult .tarjetas__productos--descripcion {
   height: 95px;
-  font-size: 18px;
+  font-size: 1.1rem;
   padding: 0px 20px 0px 20px;
 }
 
 .tutorial {
   display: flex;
   justify-content: center;
+  padding: 0px 0px 40px 0px;
 }
 
 .tutorial__textoult {
   height: 400px;
   width: 600px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ffffff;
   margin: 30px 0px 0px 30px;
   padding: 35px 35px 35px 35px;
@@ -450,12 +452,14 @@ header {
 }
 
 .formulario {
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 150px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .boton {
   width: 120px;
-  font-size: 30px;
+  font-size: 1.8rem;
   background-color: #d6d6d6;
   color: #030163;
   padding: 5px 5px 5px 5px;
@@ -469,10 +473,14 @@ header {
 }
 
 .boton:hover {
-  font-size: 31px;
+  font-size: 1.9rem;
   color: white;
   background-color: #030163;
   border: solid 2px #000000;
+}
+
+.botonform {
+  width: 30%;
 }
 
 .video {
@@ -492,7 +500,7 @@ header {
 @media (max-width: 480px) {
   /*INDEX*/
   .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     display: flex;
@@ -502,10 +510,11 @@ header {
   }
   .logo {
     font-size: 40px;
+    border-bottom: solid;
   }
   .navbar {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
   }
   .navbar a:hover {
@@ -513,17 +522,21 @@ header {
     font-size: 25px;
   }
   .navbar .navbar__pages {
+    padding: 0px 10px 0px 10px;
     font-size: 23px;
     margin: 0px 10px 0px 10px;
-    color: #ffffff;
-    background-color: #0a1280;
-    border: solid 2px black;
-    border-radius: 10px;
+    color: #0a1280;
+    border-bottom: solid 1px;
+  }
+  .botonpaginas {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
   }
   .inicio__titulo {
     width: 100%;
     font-size: 80px;
-    padding: 194px 0px 100px 0px;
+    padding: 470px 0px 100px 0px;
     text-align: center;
     color: #030163;
     background-color: #0a06fc0c;
@@ -578,7 +591,7 @@ header {
   }
   /*TIENDA*/
   .headertienda {
-    position: fixed;
+    position: absolute;
     top: 0;
     grid-area: nav;
     width: 100%;
@@ -592,7 +605,7 @@ header {
   }
   .tituloPaginas {
     font-size: 80px;
-    padding: 194px 0px 100px 0px;
+    padding: 440px 0px 130px 0px;
   }
   .subtituloTarjetas {
     padding: 15px 0px 15px 0px;
@@ -644,14 +657,18 @@ header {
     justify-content: center;
   }
   .tituloTutorialbt {
-    font-size: 90px;
-    padding: 125px 0px 50px 0px;
+    font-size: 80px;
+    padding: 390px 0px 85px 0px;
     width: 100%;
   }
   .video {
     height: 400px;
     width: 90%;
     margin: 30px 0px 0px 0px;
+  }
+  .tutorial {
+    display: flex;
+    flex-wrap: wrap;
   }
   .tutorial__textoult {
     width: 100%;
@@ -668,23 +685,24 @@ header {
   .cuerpo {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 180px 305px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 500px 0px;
+    grid-template-rows: 395px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 400px 85px 400px 400px 500px 0px;
     grid-template-areas: "nav" "titulo" "subtituloa" "imga" "pa" "mapaa" "subtitulob" "imgb" "pb" "mapab" "subtituloc" "imgc"  "pc" "mapac" "subtitulod" "imgd" "pd"  "mapad" "footer";
     background-color: #0c08ff11;
   }
   .headerlocal {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
   .tituloPaginaslocal {
     font-size: 80px;
-    padding: 57px;
+    padding: 95px 0px 117px 0px;
   }
   .imglocal {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -692,26 +710,27 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .pmoron {
+    width: 100%;
     font-size: 20px;
     color: #ffffff;
     margin: 10px 0px 10px 0px;
     padding: 35px;
     background-color: #8381fa;
-    border-radius: 8px;
+    border-radius: 0px;
   }
   .mapamoron {
     grid-area: mapaa;
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     margin: 10px 0px 10px 0px;
     border: solid 1px #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .imglocali {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -719,25 +738,26 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .pituzaingo {
+    width: 100%;
     font-size: 20px;
     color: #ffffff;
     margin: 10px 0px 10px 0px;
     padding: 35px;
     background-color: #8381fa;
-    border-radius: 8px;
+    border-radius: 0px;
   }
   .mapaituzaingo {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     margin: 10px 0px 10px 0px;
     border: solid 1px #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .imglocalh {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -745,25 +765,26 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .phurlingam {
+    width: 100%;
     font-size: 20px;
     color: #ffffff;
     margin: 10px 0px 10px 0px;
     padding: 35px;
     background-color: #8381fa;
-    border-radius: 8px;
+    border-radius: 0px;
   }
   .mapahurlingam {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     margin: 10px 0px 10px 0px;
     border: solid 1px #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .imglocalm {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -771,17 +792,18 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   .pmerlo {
+    width: 100%;
     font-size: 20px;
     color: #ffffff;
     margin: 10px 0px 10px 0px;
     padding: 35px;
     background-color: #8381fa;
-    border-radius: 8px;
+    border-radius: 0px;
   }
   .mapamerlo {
     height: 350px;
-    width: 480px;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 0px;
     margin: 10px 0px 100px 0px;
     border: solid 1px #000000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
