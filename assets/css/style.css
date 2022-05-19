@@ -665,6 +665,11 @@ header {
     padding: 390px 0px 85px 0px;
     width: 100%;
   }
+  .tituloTutoriales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .video {
     height: 400px;
     width: 90%;

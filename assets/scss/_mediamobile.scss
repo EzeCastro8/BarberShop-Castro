@@ -185,6 +185,12 @@
         width: 100%;
     }
     
+    .tituloTutoriales{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .video{
         height: 400px;
         width: 90%;
