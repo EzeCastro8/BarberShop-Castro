@@ -623,6 +623,9 @@ header {
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
     margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .tarjetas__productos .tarjetas__productos--articulos, .tarjetas__productosult .tarjetas__productos--articulos {
     font-size: 25px;
@@ -640,7 +643,7 @@ header {
     padding: 0px 20px 0px 20px;
   }
   .boton {
-    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 0px;
   }
   .tarjetas__productosult {
     width: 100%;
@@ -652,6 +655,7 @@ header {
   }
   /*TUTORIALES*/
   .navegador {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
