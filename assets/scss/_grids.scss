@@ -1,15 +1,3 @@
-.cuerpoindex{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 95px 300px 1500px 90px; 
-    grid-template-areas: 
-    "nav"
-    "titulo"
-    "imagenuno"
-    "pie";
-    background-color: #0c08ff11;
-}
-
 .tituloindex{
     grid-area: titulo;  
 }
